@@ -43,7 +43,7 @@ cd path/kpi-calculator
 poetry install
 poetry run pytest
 poetry run compute-and-persist-kpi \
-  -g <path_to_pubmed_csv> \
+  -g <path_to_graph_json> \
   -o <path_to_ouput_kpi_json>
 ```
 
