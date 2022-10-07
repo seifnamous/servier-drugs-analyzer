@@ -28,11 +28,13 @@ Example of output:
 ```
 cd path/graph-builder
 poetry install
+poetry run pytest
 poetry run build-and-persist-graph \
   -d <path_to_drugs_csv> \
   -p <path_to_pubmed_csv> \
   -c <path_to_clinical_trials_csv> \
   -o <path_to_ouput_graph_json>
+poetry run pytest
 ```
 
 * To run kpi-calculator:
@@ -40,9 +42,10 @@ poetry run build-and-persist-graph \
 ```
 cd path/kpi-calculator
 poetry install
+poetry run pytest
 poetry run compute-and-persist-kpi \
   -g <path_to_pubmed_csv> \
-  -o <path_to_ouput_kpi_json> 
+  -o <path_to_ouput_kpi_json>
 ```
 
 # Version History
