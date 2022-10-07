@@ -34,7 +34,6 @@ poetry run build-and-persist-graph \
   -p <path_to_pubmed_csv> \
   -c <path_to_clinical_trials_csv> \
   -o <path_to_ouput_graph_json>
-poetry run pytest
 ```
 
 * To run kpi-calculator:
