@@ -49,3 +49,12 @@ poetry run compute-and-persist-kpi \
 * 0.1.0
     * Initial Release
 
+# Scalability
+
+* Increase the resources allocated to the computing cluster
+* Use an hybrid raw/column-oriented storage format like parquet
+* Maximise parallelism by splitting datasets into relevant number of partitions
+* Tune shuffle param: spark.sql.shuffle.partitions
+* Cache intermediate results
+* Use Broadcast Hash Joins
+
