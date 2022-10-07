@@ -23,9 +23,12 @@ def compute_and_persist_kpi(
     )
 
     logger.info('Job started')
+
     logger.info('Reading input data ...')
     spark_session = get_spark_session("drugs_kpi_calculator")
     df_graph = reader.read(spark_session, drugs_graph_file_path)
+
+    logger.info('Finding journal with highest number of mentioned drugs ...')
     df_kpi = calculator.find_most_drugs_mentioning_journal(df_graph)
 
     logger.info('Persisting kpi results to file ...')
