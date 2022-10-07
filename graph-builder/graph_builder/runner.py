@@ -20,7 +20,8 @@ def build_and_persist_graph(
     output_graph_file_path: str,
     log_format='%(asctime)s::%(env)s::%(levelname)s::%(message)s',
     log_level='INFO',
-    env='dev'):
+    env='dev'
+):
 
     logger = lg.Logger(
         log_format=log_format,
