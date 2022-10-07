@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "graph-builder"
+version = "0.1.0"
+description = ""
+authors = ["seifnamous <senamous@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.21.0"
+logpatent = "^0.1.0"
+pyspark = "^3.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+build-and-persist-graph = "graph_builder.runner:run"
